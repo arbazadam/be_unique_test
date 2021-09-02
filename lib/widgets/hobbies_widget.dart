@@ -11,7 +11,10 @@ class HobbiesWidget extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     return Container(
       child: Center(
-        child: Text('$hobby',style: TextStyle(color: Colors.white),),
+        child: Text(
+          '$hobby'.toUpperCase(),
+          style: TextStyle(color: Colors.white70),
+        ),
       ),
       height: size.height * .15,
       decoration: BoxDecoration(

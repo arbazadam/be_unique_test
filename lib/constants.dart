@@ -9,3 +9,6 @@ const baseImageUrl = "https://api.zipconnect.app/img/interests/";
 const color1 = Color.fromRGBO(7, 33, 150, 0.7);
 const color2 = Color(0xff03148f);
 const color3 = Color(0xff030f67);
+
+const basicInfoTitle = ['Name', 'Gender', 'Age', 'Location'];
+      const personalInfoTitle = ['Looking For', 'Relationship Status', 'Kids', 'Work Title','Education','Hair Colour','Eye Colour','Height','Ethnicity','Religion'];
