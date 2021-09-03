@@ -1,18 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_redux/flutter_redux.dart';
 
+import 'business-logic/store/global_store.dart';
 import 'parent.dart';
 
 void main() {
-  runApp(MyApp());
+  
+  runApp(MyApp(store: store));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  final store;
+  MyApp({@required this.store});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-        home: ParentApp());
+    return StoreProvider(
+      store: store,
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+          home: ParentApp()),
+    );
   }
 }

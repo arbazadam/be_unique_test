@@ -26,6 +26,7 @@ dependencies:
     sdk: flutter
   flutter_redux: ^0.8.2
   flutter_swiper: ^1.1.6
+  http: ^0.13.3
   redux: ^5.0.0
 
 dev_dependencies:
